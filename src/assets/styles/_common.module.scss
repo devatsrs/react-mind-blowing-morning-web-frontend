@@ -1,0 +1,94 @@
+$primart-font: "Raleway";
+
+$yelow: #b08353;
+$white: #fff;
+$black: #000;
+$yelow-dark: #785735;
+
+$yelow: #02458e;
+$yelow-dark: #d8251d;
+$light-color: aliceblue;
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 300 12px/1 $primart-font;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-out 0s;
+
+  color: $yelow;
+  &:hover {
+    color: $black;
+  }
+}
+
+h1 {
+  font: italic 700 40px/1 $primart-font;
+  span {
+    display: block;
+    font: 400 16px/30px $primart-font;
+  }
+}
+h2 {
+  font: italic 700 35px/1 $primart-font;
+  span {
+    display: block;
+    font: 400 16px/30px $primart-font;
+  }
+}
+p {
+  font: normal 300 14px/30px $primart-font;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cta {
+  border: 0;
+  min-height: 47px;
+  border-radius: 5px;
+  padding: 0 40px;
+  padding-top: 2px;
+  background: #f47d31;
+  box-shadow: 5px 4px 12px 2px #00000040;
+
+  //text
+  font-family: $primart-font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  // text-align: left;
+  color: #fff;
+
+  &:hover {
+  }
+}
+
+.dotbefore {
+  &::before {
+  }
+}
+
+// Scolling effects
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hideInMobile {
+  @media only screen and (max-width: 570px) {
+    display: none;
+  }
+}
